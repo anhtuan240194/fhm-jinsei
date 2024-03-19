@@ -1,0 +1,250 @@
+.page-banner {
+    position: relative;
+
+    .page-banner-main {
+        padding: 6.2% 0 15.93%;
+        text-align: center;
+    }
+
+    .icon-cloud {
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.fci-about {
+    padding: 29px 0 90px;
+    background: $primary;
+    color: #fff;
+    margin-bottom: -3px;
+
+    .module-content {
+        margin-bottom: 19px;
+        
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 35px; 
+            letter-spacing: 0;
+        }
+    }
+
+    .fci-about-content {
+        text-align: center;
+        max-width: 990px;
+        margin: 0 auto;
+
+        p {
+            font-size: 16px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 92.7%;
+        }
+    }
+}
+
+.fci-advantage {
+    padding: 0 0 30px;
+    background: $primary;
+    color: #fff;
+    margin-bottom: 2px;
+
+    .module-content {
+        margin-bottom: 60px;
+    }
+
+    .fci-advantage-item {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 60px;
+        row-gap: 32px;
+        margin-bottom: 83px;
+
+        &:nth-child(2n+1) {
+            flex-direction: row-reverse;
+        }
+
+        &:nth-child(2n) {
+            .fci-advantage-content {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding: 0 40px 0 14px;
+            }
+        }
+
+        .fci-advantage-content {
+            flex: 0 0 45.1%;
+            max-width: 45.1%;
+
+            p {
+                font-size: 16px;
+                line-height: 35px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .fci-advantage-img {
+            flex: 1;
+            
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.products-by-category {
+    padding: 72px 0 85px;
+
+    .module-content {
+        margin-bottom: 50px;
+
+        .sub-title {
+            font-size: 11px;
+            letter-spacing: 2.2px;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            line-height: normal;
+        }
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 50px;
+        column-gap: 32px;
+    }
+}
+
+@include min-extra-desktop {
+    .fci-advantage {
+        .module-content {
+            h3 {
+                font-size: 38px;
+                line-height: 52px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .fci-advantage {
+        .fci-advantage-item {
+            &:nth-child(2n) {
+                .fci-advantage-content {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .fci-about {
+        .fci-about-content {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .fci-advantage {
+        padding: 0 0 18px;
+
+        .fci-advantage-item {
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+
+            &:nth-child(2n) {
+                .fci-advantage-content {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .fci-advantage-content {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .products-by-category {
+        .product-list {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 24px;
+            row-gap: 36px;
+        }
+    }
+}
+
+@include landscape-phone {
+    .page-banner  {
+        .page-banner-main {
+            img {
+                max-height: 30px;
+            }
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-banner  {
+        .page-banner-main {
+            img {
+                max-height: 20px;
+            }
+        }
+    }
+
+    .fci-about {
+        .module-content {
+            h1 {
+                font-size: 24px;
+                line-height: normal;
+            }
+        }
+
+        .fci-about-content {
+            p {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .fci-advantage {
+        .module-content {
+            margin-bottom: 36px;
+        }
+    }
+
+    .products-by-category {
+        .product-list {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 12px;
+            row-gap: 36px;
+        }
+    }
+}
+
+@include small-mobile {
+    .products-by-category {
+        .product-list {
+            grid-template-columns: 1fr;
+        }
+    }
+}
