@@ -9,7 +9,7 @@
 
 /*Reset CSS*/
 body {
-  font-family: $font-main;
+  font-family: $font-roboto;
   color: #000;
   background: #fff;
   font-size: 14px;
@@ -18,45 +18,57 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --violet: #1d1761;
+  --violet-hv: #1a1557;
+  --violet-ac: #17124e;
+
+  --red: #ee2e24;
+  --red-hv: #d62920;
+  --red-ac: #be251d;
+
+  --grey: #cccccc;
+  --grey-hv: #b8b8b8;
+  --grey-ac: #a3a3a3;
+}
+
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .row {
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .row > * {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: 0.57px;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 32px;
   font-weight: 700;
-  letter-spacing: 0.57px;
-  line-height: normal;
   margin-bottom: 0;
 }
 
 h3 {
-  font-size: 30px;
-  font-weight: 800;
-  line-height: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 h4 {
-  font-size: 18px;
-  line-height: normal;
+  font-size: 14px;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
