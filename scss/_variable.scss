@@ -32,10 +32,6 @@
   $font-inter: "Inter", sans-serif ;
   $font-roboto: "Roboto", sans-serif;
 
-  /**Variable colors**/
-  $primary: #112A4C;
-
-
   /**Media Queries**/
   @mixin min-extra-desktop {
     @media (min-width: 1440px) {
