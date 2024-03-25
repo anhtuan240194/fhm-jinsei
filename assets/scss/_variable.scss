@@ -100,7 +100,7 @@
   }
   
   @mixin small-mobile {
-    @media only screen and (max-width: 375.98px) {
+    @media only screen and (max-width: 374.98px) {
       @content;
     }
   }
