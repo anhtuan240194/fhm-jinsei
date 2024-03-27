@@ -219,6 +219,37 @@ if(btnCloseSubmenu) {
     }
   }) || false;
 
+  //Slider recently product
+  const swiperProductRecently = new Swiper('.product-recently .swiper', {
+    direction: 'horizontal',
+    slidesPerView: 5,
+    spaceBetween: 20,
+    speed: 1000,
+    watchOverflow: true,
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        376: {
+            slidesPerView: 2.2,
+            },
+        577: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 5,
+            },
+    }
+  }) || false;
+
   //Slider Thumb Image Product Detail
   const productImageThumbs = new Swiper('.detail-image .thumb-image .swiper', {
     direction: 'horizontal',
@@ -248,6 +279,56 @@ if(btnCloseSubmenu) {
       thumbs: {
           swiper: productImageThumbs,
       },
+  }) || false;
+
+  //Slider recently blog
+  const swiperBlogRecently = new Swiper('.blog-recently .swiper', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 23,
+    speed: 1000,
+    watchOverflow: true,
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        376: {
+            slidesPerView: 2,
+            },
+        992: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+      nextEl: '.blog-recently .swiper-button-next',
+      prevEl: '.blog-recently .swiper-button-prev',
+    },
+  }) || false;
+
+  //Slider promotion orther
+  const swiperPromotionOrther = new Swiper('.promotions-orther .swiper', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 1000,
+    watchOverflow: true,
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        376: {
+            slidesPerView: 2,
+            },
+        992: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+      nextEl: '.promotions-orther .swiper-button-next',
+      prevEl: '.promotions-orther .swiper-button-prev',
+    },
   }) || false;
 
   //Set time Flash sale
@@ -317,7 +398,6 @@ if(btnCloseSubmenu) {
       || event.target.closest('.sortby-toggle')) {
         return
       }
-      console.log(event.target.closest('.sortby-toggle'))
       sortBy.classList.remove('active')
     })
 
@@ -361,3 +441,52 @@ if(btnCloseSubmenu) {
       }
     })
   })
+
+  //Event active tabs product details
+  const btnTabsProductDetail = document.querySelectorAll('.product-detail-tabs .tab-item')
+  if(btnTabsProductDetail) {
+    Array.from(btnTabsProductDetail).forEach((tab) => {
+      tab.addEventListener('click', () => {
+        if(tab.classList.contains('active')) {
+          return
+        }
+
+        //Active tab
+        const tabActive = document.querySelector('.product-detail-tabs .tab-item.active')
+        tabActive.classList.remove('active')
+        tab.classList.add('active')
+      })
+    })
+  }
+
+  //Copy code voucher Promotion page
+  const btnCopyVoucher = document.querySelectorAll('.voucher-item .copy')
+  if(btnCopyVoucher) {
+    Array.from(btnCopyVoucher).forEach((btn) => {
+      const code = btn.previousElementSibling.textContent
+
+      btn.addEventListener('click', () => {
+        navigator.clipboard.writeText(code);
+
+        alert("Bạn đã copy mã thành công")
+      })
+    })
+
+    const showCondition = document.querySelectorAll('.voucher-item .btn-condition')
+    Array.from(showCondition).forEach((btnShow) => {
+      btnShow.addEventListener('click', () => {
+        const parentEl = btnShow.closest('.voucher-item')
+        parentEl.classList.add('show-condition')
+
+      })
+    })
+
+    const hideCondition = document.querySelectorAll('.voucher-item .close-condition')
+    Array.from(hideCondition).forEach((btnHide) => {
+      btnHide.addEventListener('click', () => {
+        const parentEl = btnHide.closest('.voucher-item')
+        parentEl.classList.remove('show-condition')
+
+      })
+    })
+  }

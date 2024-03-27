@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jinsei's" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper.css" />
+    <link rel="icon" href="./assets/image/icons/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Jinsei's Promotion Detail</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="hamburger d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+                    <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H18" stroke="#1D1761" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 6H18" stroke="#1D1761" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1 11H18" stroke="#1D1761" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <a href="/" class="logo">
+                    <img src="./assets/image/logo.png" alt="Jinsei's" title="Jinsei's">
+                </a>
+
+                <div class="header-search">
+                    <form action="search" id="search">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm.....">
+
+                        <button class="search-submit bg-violet-light" title="Search">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.11496 0.609473C6.1279 0.612804 4.22318 1.40364 2.81812 2.8087C1.41306 4.21376 0.622228 6.11848 0.618896 8.10554C0.620557 10.0943 1.41045 12.0013 2.81552 13.4087C4.22058 14.8161 6.12624 15.6092 8.11496 15.6142C9.87874 15.6142 11.5039 14.9937 12.789 13.967L15.9102 17.0882C16.0684 17.2352 16.2773 17.3153 16.4932 17.3115C16.7091 17.3077 16.9151 17.2204 17.068 17.0679C17.2208 16.9155 17.3087 16.7097 17.313 16.4938C17.3174 16.2779 17.2379 16.0688 17.0913 15.9103L13.9701 12.7859C15.0361 11.4601 15.6173 9.8099 15.6173 8.10869C15.6173 3.9764 12.2472 0.609473 8.11496 0.609473ZM8.11496 2.27876C11.3465 2.27876 13.948 4.87719 13.948 8.10554C13.948 11.3339 11.3465 13.9481 8.11496 13.9481C4.88346 13.9481 2.28504 11.3433 2.28504 8.11183C2.28504 4.88034 4.88346 2.27876 8.11496 2.27876Z" fill="#1D1761"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="suggest">
+                        <div class="suggest-title">Tra cứu hàng đầu</div>
+                        <div class="suggest-list">
+                            <div class="suggest-item bg-violet-light">Viatamin C</div>
+                            <div class="suggest-item bg-violet-light">Viatamin B</div>
+                            <div class="suggest-item bg-violet-light">Viatamin C</div>
+                            <div class="suggest-item bg-violet-light">Viatamin D</div>
+                            <div class="suggest-item bg-violet-light">Viatamin E</div>
+                            <div class="suggest-item bg-violet-light">Viatamin F</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-user btn-main bg-violet-light" data-bs-toggle="modal" data-bs-target="#popup-account">
+                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.89 21.14C7.08 20.23 8.41 19.5127 9.88 18.9882C11.35 18.4637 12.89 18.2009 14.5 18.2C16.11 18.2 17.65 18.4627 19.12 18.9882C20.59 19.5137 21.92 20.2309 23.11 21.14C23.9267 20.1833 24.5627 19.0983 25.0182 17.885C25.4737 16.6717 25.7009 15.3767 25.7 14C25.7 10.8967 24.6094 8.25393 22.4282 6.0718C20.247 3.88967 17.6043 2.79907 14.5 2.8C11.3967 2.8 8.75393 3.89107 6.5718 6.0732C4.38967 8.25533 3.29907 10.8976 3.3 14C3.3 15.3767 3.52773 16.6717 3.9832 17.885C4.43867 19.0983 5.07427 20.1833 5.89 21.14ZM14.5 15.4C13.1233 15.4 11.9623 14.9277 11.0168 13.9832C10.0713 13.0387 9.59907 11.8776 9.6 10.5C9.6 9.12333 10.0727 7.96227 11.0182 7.0168C11.9637 6.07133 13.1243 5.59907 14.5 5.6C15.8767 5.6 17.0377 6.07273 17.9832 7.0182C18.9287 7.96367 19.4009 9.12427 19.4 10.5C19.4 11.8767 18.9277 13.0377 17.9832 13.9832C17.0387 14.9287 15.8776 15.4009 14.5 15.4ZM14.5 28C12.5633 28 10.7433 27.6323 9.04 26.8968C7.33667 26.1613 5.855 25.1641 4.595 23.905C3.335 22.645 2.33773 21.1633 1.6032 19.46C0.868667 17.7567 0.500933 15.9367 0.5 14C0.5 12.0633 0.867734 10.2433 1.6032 8.54C2.33867 6.83667 3.33593 5.355 4.595 4.095C5.855 2.835 7.33667 1.83773 9.04 1.1032C10.7433 0.368667 12.5633 0.000933333 14.5 0C16.4367 0 18.2567 0.367734 19.96 1.1032C21.6633 1.83867 23.145 2.83593 24.405 4.095C25.665 5.355 26.6627 6.83667 27.3982 8.54C28.1337 10.2433 28.5009 12.0633 28.5 14C28.5 15.9367 28.1323 17.7567 27.3968 19.46C26.6613 21.1633 25.6641 22.645 24.405 23.905C23.145 25.165 21.6633 26.1627 19.96 26.8982C18.2567 27.6337 16.4367 28.0009 14.5 28Z" fill="#1D1761"/>
+                        </svg>
+                    </div>
+
+                    <a href="#" class="header-whishlist btn-main bg-violet-light">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1042 16.6406L11 16.7448L10.8855 16.6406C5.93754 12.151 2.66671 9.18227 2.66671 6.17185C2.66671 4.08852 4.22921 2.52602 6.31254 2.52602C7.91671 2.52602 9.47921 3.56769 10.0313 4.98435H11.9688C12.5209 3.56769 14.0834 2.52602 15.6875 2.52602C17.7709 2.52602 19.3334 4.08852 19.3334 6.17185C19.3334 9.18227 16.0625 12.151 11.1042 16.6406ZM15.6875 0.442688C13.875 0.442688 12.1355 1.28644 11 2.60935C9.86462 1.28644 8.12504 0.442688 6.31254 0.442688C3.10421 0.442688 0.583374 2.9531 0.583374 6.17185C0.583374 10.0989 4.12504 13.3177 9.48962 18.1823L11 19.5573L12.5105 18.1823C17.875 13.3177 21.4167 10.0989 21.4167 6.17185C21.4167 2.9531 18.8959 0.442688 15.6875 0.442688Z" fill="#1D1761"/>
+                        </svg>
+                            
+                        <div class="quantity bg-linear">
+                            <span>1</span>
+                        </div>
+                    </a>
+
+                    <a href="cart.html" class="header-cart btn-main bg-linear">
+                        <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 5.70215H12.5V4.7447C12.5 3.72898 12.0786 2.75486 11.3284 2.03664C10.5783 1.31841 9.56087 0.914917 8.5 0.914917C7.43913 0.914917 6.42172 1.31841 5.67157 2.03664C4.92143 2.75486 4.5 3.72898 4.5 4.7447V5.70215H1.5C1.23478 5.70215 0.98043 5.80303 0.792893 5.98258C0.605357 6.16214 0.5 6.40567 0.5 6.6596V17.1915C0.5 17.9533 0.816071 18.6839 1.37868 19.2226C1.94129 19.7612 2.70435 20.0639 3.5 20.0639H13.5C14.2956 20.0639 15.0587 19.7612 15.6213 19.2226C16.1839 18.6839 16.5 17.9533 16.5 17.1915V6.6596C16.5 6.40567 16.3946 6.16214 16.2071 5.98258C16.0196 5.80303 15.7652 5.70215 15.5 5.70215ZM6.5 4.7447C6.5 4.23684 6.71071 3.74978 7.08579 3.39067C7.46086 3.03156 7.96957 2.82981 8.5 2.82981C9.03043 2.82981 9.53914 3.03156 9.91421 3.39067C10.2893 3.74978 10.5 4.23684 10.5 4.7447V5.70215H6.5V4.7447ZM14.5 17.1915C14.5 17.4454 14.3946 17.689 14.2071 17.8685C14.0196 18.0481 13.7652 18.149 13.5 18.149H3.5C3.23478 18.149 2.98043 18.0481 2.79289 17.8685C2.60536 17.689 2.5 17.4454 2.5 17.1915V7.61704H4.5V8.57449C4.5 8.82842 4.60536 9.07195 4.79289 9.25151C4.98043 9.43107 5.23478 9.53194 5.5 9.53194C5.76522 9.53194 6.01957 9.43107 6.20711 9.25151C6.39464 9.07195 6.5 8.82842 6.5 8.57449V7.61704H10.5V8.57449C10.5 8.82842 10.6054 9.07195 10.7929 9.25151C10.9804 9.43107 11.2348 9.53194 11.5 9.53194C11.7652 9.53194 12.0196 9.43107 12.2071 9.25151C12.3946 9.07195 12.5 8.82842 12.5 8.57449V7.61704H14.5V17.1915Z" fill="white"/>
+                        </svg>
+
+                        <div class="header-cart-info">
+                            <span>Giỏ hàng</span>
+                            <span>(1)</span>
+                        </div>
+                    </a>
+
+                    <a href="cart.html" class="header-cart header-cart-mb btn-main">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4118 5.38238H13.2353V4.3765C13.2353 3.30939 12.7891 2.28599 11.9948 1.53143C11.2005 0.776873 10.1233 0.352966 9.00001 0.352966C7.87674 0.352966 6.79947 0.776873 6.0052 1.53143C5.21093 2.28599 4.76471 3.30939 4.76471 4.3765V5.38238H1.58824C1.30743 5.38238 1.03811 5.48836 0.839541 5.67699C0.640973 5.86563 0.529419 6.12148 0.529419 6.38826V17.453C0.529419 18.2533 0.864082 19.0208 1.45979 19.5868C2.05549 20.1527 2.86344 20.4706 3.70589 20.4706H14.2941C15.1366 20.4706 15.9445 20.1527 16.5402 19.5868C17.1359 19.0208 17.4706 18.2533 17.4706 17.453V6.38826C17.4706 6.12148 17.359 5.86563 17.1605 5.67699C16.9619 5.48836 16.6926 5.38238 16.4118 5.38238ZM6.88236 4.3765C6.88236 3.84294 7.10547 3.33124 7.50261 2.95396C7.89974 2.57668 8.43837 2.36473 9.00001 2.36473C9.56164 2.36473 10.1003 2.57668 10.4974 2.95396C10.8945 3.33124 11.1177 3.84294 11.1177 4.3765V5.38238H6.88236V4.3765ZM15.3529 17.453C15.3529 17.7197 15.2414 17.9756 15.0428 18.1642C14.8443 18.3529 14.5749 18.4588 14.2941 18.4588H3.70589C3.42507 18.4588 3.15576 18.3529 2.95719 18.1642C2.75862 17.9756 2.64707 17.7197 2.64707 17.453V7.39414H4.76471V8.40003C4.76471 8.6668 4.87627 8.92265 5.07484 9.11129C5.2734 9.29993 5.54272 9.40591 5.82354 9.40591C6.10435 9.40591 6.37367 9.29993 6.57224 9.11129C6.77081 8.92265 6.88236 8.6668 6.88236 8.40003V7.39414H11.1177V8.40003C11.1177 8.6668 11.2292 8.92265 11.4278 9.11129C11.6263 9.29993 11.8957 9.40591 12.1765 9.40591C12.4573 9.40591 12.7266 9.29993 12.9252 9.11129C13.1237 8.92265 13.2353 8.6668 13.2353 8.40003V7.39414H15.3529V17.453Z" fill="#1D1761"/>
+                        </svg>
+
+                        <div class="header-cart-info">
+                            <span>1</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="header-category btn-main bg-violet-light" data-bs-toggle="modal" data-bs-target="#category">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3984 1.80405H0.601479C0.442371 1.80405 0.289779 1.74089 0.177272 1.62845C0.0647659 1.51602 0.00156033 1.36352 0.00156033 1.20452C0.00156033 1.04551 0.0647659 0.893015 0.177272 0.78058C0.289779 0.668146 0.442371 0.60498 0.601479 0.60498H11.3984C11.5575 0.60498 11.7101 0.668146 11.8226 0.78058C11.9351 0.893015 11.9983 1.04551 11.9983 1.20452C11.9983 1.36352 11.9351 1.51602 11.8226 1.62845C11.7101 1.74089 11.5575 1.80405 11.3984 1.80405ZM7.40982 4.41129C7.40939 4.25242 7.34604 4.10018 7.23363 3.98783C7.12122 3.87549 6.96888 3.81219 6.8099 3.81176H0.59821C0.439101 3.81176 0.28651 3.87492 0.174003 3.98736C0.0614965 4.09979 -0.00170898 4.25229 -0.00170898 4.41129C-0.00170898 4.5703 0.0614965 4.72279 0.174003 4.83523C0.28651 4.94766 0.439101 5.01083 0.59821 5.01083H6.8099C6.96888 5.0104 7.12122 4.94709 7.23363 4.83475C7.34604 4.72241 7.40939 4.57017 7.40982 4.41129ZM9.23736 7.60337C9.23693 7.4445 9.17359 7.29225 9.06118 7.17991C8.94876 7.06757 8.79642 7.00427 8.63745 7.00383H0.601479C0.442371 7.00383 0.289779 7.067 0.177272 7.17943C0.0647659 7.29187 0.00156033 7.44436 0.00156033 7.60337C0.00156033 7.76238 0.0647659 7.91487 0.177272 8.0273C0.289779 8.13974 0.442371 8.2029 0.601479 8.2029H8.63908C8.79777 8.20204 8.94969 8.13855 9.06176 8.02625C9.17382 7.91396 9.23694 7.76196 9.23736 7.60337ZM11.4564 10.7954C11.456 10.6366 11.3926 10.4843 11.2802 10.372C11.1678 10.2596 11.0155 10.1963 10.8565 10.1959H0.646432C0.487324 10.1959 0.334732 10.2591 0.222225 10.3715C0.109719 10.4839 0.0465134 10.6364 0.0465134 10.7954C0.0465134 10.9545 0.109719 11.1069 0.222225 11.2194C0.334732 11.3318 0.487324 11.395 0.646432 11.395H10.8581C11.0171 11.3945 11.1694 11.3312 11.2819 11.2189C11.3943 11.1066 11.4576 10.9543 11.458 10.7954H11.4564Z" fill="#1D1761"/>
+                    </svg>
+                        
+                    <span>Sản phẩm</span>
+                </div>
+
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="about-us.html" title="VỀ JINSEI">VỀ JINSEI</a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a class="nav-link" href="promotion.html" title="KHUYẾN MẠI">KHUYẾN MẠI</a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog-list.html" title="GÓC SỨC KHỎE">GÓC SỨC KHỎE</a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog-list.html" title="TIN TỨC">TIN TỨC</a>
+          
+                        <ul class="nav-list nav-list-lv0">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link" title="Demo sub menu">
+                              Demo sub menu
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link" title="Demo sub menu">
+                              Demo sub menu
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Liên hệ">Liên hệ</a>
+                      </li>
+                    </ul>
+                </nav>
+
+                <div class="header-noti">
+                    <div class="hotline">
+                        Hỗ trợ:
+                        <a href="tel:1900 - 000000" title=" 1900 - 000000"> 1900 - 000000</a>
+                    </div>
+
+                    <div class="noti btn-main bg-violet-light">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7501 18.625C13.7503 19.1716 13.5438 19.6981 13.1721 20.0989C12.8004 20.4997 12.291 20.7452 11.7459 20.7862L11.5834 20.7916H9.41675C8.87012 20.7918 8.34363 20.5854 7.94282 20.2137C7.54201 19.842 7.29649 19.3326 7.2555 18.7875L7.25008 18.625H13.7501ZM10.5001 0.208313C12.4663 0.208281 14.3557 0.971948 15.7697 2.33823C17.1836 3.70451 18.0117 5.56657 18.0791 7.53165L18.0834 7.79165V11.8693L20.0572 15.817C20.1434 15.9892 20.1865 16.1798 20.1829 16.3723C20.1793 16.5649 20.129 16.7537 20.0365 16.9226C19.944 17.0915 19.8119 17.2355 19.6515 17.3421C19.4912 17.4488 19.3074 17.515 19.1158 17.5351L18.9912 17.5416H2.00891C1.81626 17.5417 1.62646 17.495 1.45579 17.4057C1.28511 17.3163 1.13865 17.1869 1.02895 17.0285C0.919248 16.8702 0.849581 16.6875 0.825918 16.4963C0.802255 16.3052 0.8253 16.1111 0.89308 15.9307L0.942913 15.817L2.91675 11.8693V7.79165C2.91675 5.78042 3.7157 3.85157 5.13785 2.42942C6.56 1.00727 8.48885 0.208313 10.5001 0.208313ZM10.5001 2.37498C9.10424 2.37506 7.76232 2.91398 6.75415 3.87936C5.74599 4.84474 5.14941 6.16204 5.08883 7.55656L5.08341 7.79165V11.8693C5.08342 12.138 5.03346 12.4043 4.93608 12.6547L4.85483 12.8389L3.58733 15.375H17.4139L16.1464 12.8378C16.0262 12.5976 15.9516 12.3372 15.9265 12.0697L15.9167 11.8693V7.79165C15.9167 6.35506 15.3461 4.97731 14.3302 3.96148C13.3144 2.94566 11.9367 2.37498 10.5001 2.37498Z" fill="#1D1761"/>
+                        </svg>
+
+                        <div class="quantity bg-linear">
+                            <span>1</span>
+                        </div>
+
+                        <div class="noti-box">
+                            <h4>Thông báo</h4>
+
+                            <div class="noti-list">
+                                <a href="#" class="noti-item">
+                                    <div class="noti-image">
+                                        <img src="./assets/image/norti.png" alt="Jinsei's" title="Jinsei's">
+                                    </div>
+
+                                    <div class="noti-info">
+                                        <div class="noti-title">Duy nhất ngày 8-3!</div>
+                                        <p class="noti-des">
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatuQuis Quis autem vel eum iure...
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="noti-item">
+                                    <div class="noti-image">
+                                        <img src="./assets/image/norti.png" alt="Jinsei's" title="Jinsei's">
+                                    </div>
+
+                                    <div class="noti-info">
+                                        <div class="noti-title">Duy nhất ngày 8-3!</div>
+                                        <p class="noti-des">
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatuQuis Quis autem vel eum iure...
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="noti-item">
+                                    <div class="noti-image">
+                                        <img src="./assets/image/norti.png" alt="Jinsei's" title="Jinsei's">
+                                    </div>
+
+                                    <div class="noti-info">
+                                        <div class="noti-title">Duy nhất ngày 8-3!</div>
+                                        <p class="noti-des">
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatuQuis Quis autem vel eum iure...
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="noti-item">
+                                    <div class="noti-image">
+                                        <img src="./assets/image/norti.png" alt="Jinsei's" title="Jinsei's">
+                                    </div>
+
+                                    <div class="noti-info">
+                                        <div class="noti-title">Duy nhất ngày 8-3!</div>
+                                        <p class="noti-des">
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatuQuis Quis autem vel eum iure...
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="noti-item">
+                                    <div class="noti-image">
+                                        <img src="./assets/image/norti.png" alt="Jinsei's" title="Jinsei's">
+                                    </div>
+
+                                    <div class="noti-info">
+                                        <div class="noti-title">Duy nhất ngày 8-3!</div>
+                                        <p class="noti-des">
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatuQuis Quis autem vel eum iure...
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="noti-view-more">Xem tất cả</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-category modal fade" id="category" tabindex="-1" aria-labelledby="categoryLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="category-wrap">
+                        <div class="category-left">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                  <a class="nav-link " href="product-list.html" title="Thực phẩm chức năng">Thực phẩm chức năng</a>
+
+                                  <div class="more">
+                                    <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                  </div>
+                                </li>
+                    
+                                <li class="nav-item">
+                                  <a class="nav-link " href="product-list.html" title="Làm đẹp">Làm đẹp</a>
+                                  <div class="more">
+                                    <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                  </div>
+                                </li>
+                    
+                                <li class="nav-item">
+                                  <a class="nav-link " href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                  <div class="more">
+                                    <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                  </div>
+                                </li>
+                    
+                                <li class="nav-item">
+                                  <a class="nav-link " href="product-list.html" title="Mẹ và bé">Mẹ và bé</a>
+                                  <div class="more collapsed" data-bs-toggle="collapse" data-bs-target="#category-menu-4" aria-expanded="false" aria-controls="category-menu-4">
+                                    <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                  </div>
+                    
+                                  <ul class="nav-list nav-list-lv0 collapse" id="category-menu-4">
+                                    <li class="nav-item">
+                                      <a href="#" class="nav-link" title="Demo sub menu">
+                                        Demo sub menu
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#" class="nav-link" title="Demo sub menu">
+                                        Demo sub menu
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+          
+                                <li class="nav-item">
+                                  <a class="nav-link" href="product-list.html" title="Thực phẩm chức năng">Thực phẩm chức năng</a>
+                                  <div class="more">
+                                    <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                  </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Mẹ và bé">Mẹ và bé</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                                    <div class="more">
+                                        <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                                    </div>
+                                </li>
+                              </ul>
+
+                        </div>
+
+                        <div class="category-right">
+                            <div class="category-bestsell">
+                                <div class="bestsell-head">
+                                    <h3>Sản phẩm bán chạy</h3>
+
+                                    <a href="product-list.html" class="view-more btn-main">
+                                        Xem thêm
+
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.469668 0.219668C0.176777 0.512558 0.176777 0.987438 0.469668 1.28033L7.1893 8L0.469668 14.7197C0.176777 15.0126 0.176777 15.4874 0.469668 15.7803C0.762558 16.0732 1.23744 16.0732 1.53033 15.7803L8.7803 8.5303C9.0732 8.2374 9.0732 7.7626 8.7803 7.4697L1.53033 0.219668C1.23744 -0.0732225 0.762558 -0.0732225 0.469668 0.219668Z" fill="#1D1761"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="bestsell-list">
+                                    <div class="product-item product-item-grid">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item product-item-grid">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item product-item-grid">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bestsell-list">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+
+                                            <div class="product-price">
+                                                <span class="price-current">719.000 đ</span>
+                                                <span class="price-old">1.025.000 đ</span>
+                                                <span class="discount">-5%</span>
+                                            </div>
+
+                                            <div class="product-action">
+                                                <div class="rating">
+                                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 0L7.62229 3.76711L11.7063 4.1459L8.62492 6.85289L9.52671 10.8541L6 8.76L2.47329 10.8541L3.37508 6.85289L0.293661 4.1459L4.37771 3.76711L6 0Z" fill="#FFD12E"/>
+                                                    </svg>
+                                                    <span>4.9 (20)</span>
+                                                </div>
+
+                                                <span class="sold">Đã bán 122</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+
+                                            <div class="product-price">
+                                                <span class="price-current">719.000 đ</span>
+                                                <span class="price-old">1.025.000 đ</span>
+                                                <span class="discount">-5%</span>
+                                            </div>
+
+                                            <div class="product-action">
+                                                <div class="rating">
+                                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 0L7.62229 3.76711L11.7063 4.1459L8.62492 6.85289L9.52671 10.8541L6 8.76L2.47329 10.8541L3.37508 6.85289L0.293661 4.1459L4.37771 3.76711L6 0Z" fill="#FFD12E"/>
+                                                    </svg>
+                                                    <span>4.9 (20)</span>
+                                                </div>
+
+                                                <span class="sold">Đã bán 122</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./assets/image/product-image.png" alt="Tên sản phẩm" title="Tên sản phẩm">
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h4 class="product-name">
+                                                <a href="product-detail.html" title="AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp">
+                                                    AFC RICH Light Collagen hỗ trợ tăng cường trẻ hoá và sắc đẹp
+                                                </a>
+                                            </h4>
+
+                                            <div class="product-price">
+                                                <span class="price-current">719.000 đ</span>
+                                                <span class="price-old">1.025.000 đ</span>
+                                                <span class="discount">-5%</span>
+                                            </div>
+
+                                            <div class="product-action">
+                                                <div class="rating">
+                                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 0L7.62229 3.76711L11.7063 4.1459L8.62492 6.85289L9.52671 10.8541L6 8.76L2.47329 10.8541L3.37508 6.85289L0.293661 4.1459L4.37771 3.76711L6 0Z" fill="#FFD12E"/>
+                                                    </svg>
+                                                    <span>4.9 (20)</span>
+                                                </div>
+
+                                                <span class="sold">Đã bán 122</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Breadcrumb-->
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="breadcrumb-list">
+                    <a href="/" title="Trang chủ" class="breadcrumb-link">Trang chủ</a>
+                    <span class="breadcrumb-arrow">/</span>
+                    <a href="product-list.html" title="Chương trình khuyến mại" class="breadcrumb-link">Chương trình khuyến mại</a>
+                    <span class="breadcrumb-arrow">/</span>
+                    <a href="product-list.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius" class="breadcrumb-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Promotion Detail-->
+        <section class="promotion-detail">
+            <div class="container">
+                <h1 class="title-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</h1>
+                <div class="promotion-date-view">
+                    <span class="promotion-date">Ngày hết hạn: 05/05/2024</span>
+                    <span>|</span> 
+                    <span class="view">2.063 lượt xem</span>
+                </div>
+
+                <div class="voucher-list">
+                    <div class="voucher-item">
+                        <p class="voucher-title">Lorem ipsum dolor sit amet</p>
+                        <div class="voucher-code">
+                            <span class="code">JHGG3453453</span>
+                            <button class="copy">Lấy mã</button>
+                        </div>
+                        <p class="voucher-sum">
+                            <span>Giảm 15% </span>khi mua đơn hàng từ 1.000.000 đ
+                        </p>
+                        <button class="btn-condition" title="Điều khoản và điều kiện">Điều khoản và điều kiện</button>
+
+                        <div class="voucher-condition">
+                            <p>Ngày hết hạn: 05/05/2024</p>
+                            <p>Đơn hàng tối thiểu 1000k</p>
+                            <p>Giảm tối đa 200k</p>
+
+                            <button class="close-condition bg-violet-light" title="Đóng">
+                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8" stroke="#0A0822" stroke-linecap="round"></path>
+                                    <path d="M8 1L1 8" stroke="#0A0822" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="voucher-item">
+                        <p class="voucher-title">Lorem ipsum dolor sit amet</p>
+                        <div class="voucher-code">
+                            <span class="code">JHGG3453453</span>
+                            <button class="copy">Lấy mã</button>
+                        </div>
+                        <p class="voucher-sum">
+                            <span>Giảm 15% </span>khi mua đơn hàng từ 1.000.000 đ
+                        </p>
+                        <button class="btn-condition" title="Điều khoản và điều kiện">Điều khoản và điều kiện</button>
+
+                        <div class="voucher-condition">
+                            <p>Ngày hết hạn: 05/05/2024</p>
+                            <p>Đơn hàng tối thiểu 1000k</p>
+                            <p>Giảm tối đa 200k</p>
+
+                            <button class="close-condition bg-violet-light" title="Đóng">
+                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8" stroke="#0A0822" stroke-linecap="round"></path>
+                                    <path d="M8 1L1 8" stroke="#0A0822" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--Promotion orther-->
+        <section class="promotions-orther">
+            <div class="container">
+                <div class="block-heading">
+                    <h3 class="title">Chương trình khuyến mại khác</h3>
+                </div>
+
+                <div class="list-promotion">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="promotion-item">
+                                <a href="promotion-detail.html" class="promotion-image" title="Jinsei's">
+                                    <img src="./assets/image/blog-item.png" alt="Jinsei's" title="Jinsei's">
+                                </a>
+    
+                                <div class="promotion-info">
+                                    <h4 class="promotion-name">
+                                        <a href="product-detail.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                                        </a>
+                                    </h4>
+    
+                                    <p class="promotion-date">
+                                        Thời gian kết thúc: 02/01/2024
+                                    </p>
+    
+                                    <a href="product-detail.html" class="view-more bg-violet-light" title="XEM CHI TIẾT">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="promotion-item">
+                                <a href="promotion-detail.html" class="promotion-image" title="Jinsei's">
+                                    <img src="./assets/image/blog-item.png" alt="Jinsei's" title="Jinsei's">
+                                </a>
+    
+                                <div class="promotion-info">
+                                    <h4 class="promotion-name">
+                                        <a href="product-detail.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                                        </a>
+                                    </h4>
+    
+                                    <p class="promotion-date">
+                                        Thời gian kết thúc: 02/01/2024
+                                    </p>
+    
+                                    <a href="product-detail.html" class="view-more bg-violet-light" title="XEM CHI TIẾT">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="promotion-item">
+                                <a href="promotion-detail.html" class="promotion-image" title="Jinsei's">
+                                    <img src="./assets/image/blog-item.png" alt="Jinsei's" title="Jinsei's">
+                                </a>
+    
+                                <div class="promotion-info">
+                                    <h4 class="promotion-name">
+                                        <a href="product-detail.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                                        </a>
+                                    </h4>
+    
+                                    <p class="promotion-date">
+                                        Thời gian kết thúc: 02/01/2024
+                                    </p>
+    
+                                    <a href="product-detail.html" class="view-more bg-violet-light" title="XEM CHI TIẾT">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="promotion-item">
+                                <a href="promotion-detail.html" class="promotion-image" title="Jinsei's">
+                                    <img src="./assets/image/blog-item.png" alt="Jinsei's" title="Jinsei's">
+                                </a>
+    
+                                <div class="promotion-info">
+                                    <h4 class="promotion-name">
+                                        <a href="product-detail.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                                        </a>
+                                    </h4>
+    
+                                    <p class="promotion-date">
+                                        Thời gian kết thúc: 02/01/2024
+                                    </p>
+    
+                                    <a href="product-detail.html" class="view-more bg-violet-light" title="XEM CHI TIẾT">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev swiper-circle">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.53033 0.219668C8.82322 0.512558 8.82322 0.987438 8.53033 1.28033L1.8107 8L8.53033 14.7197C8.82322 15.0126 8.82322 15.4874 8.53033 15.7803C8.23744 16.0732 7.76256 16.0732 7.46967 15.7803L0.219703 8.5303C-0.0731974 8.2374 -0.0731974 7.7626 0.219703 7.4697L7.46967 0.219668C7.76256 -0.0732225 8.23744 -0.0732225 8.53033 0.219668Z" fill="#1D1761"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next swiper-circle">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469668 15.7803C0.176778 15.4874 0.176778 15.0126 0.469668 14.7197L7.1893 8L0.46967 1.2803C0.17678 0.987402 0.17678 0.512602 0.46967 0.219702C0.76256 -0.0731982 1.23744 -0.0731981 1.53033 0.219702L8.7803 7.4697C9.0732 7.7626 9.0732 8.2374 8.7803 8.5303L1.53033 15.7803C1.23744 16.0732 0.762557 16.0732 0.469668 15.7803Z" fill="#1D1761"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Menu Mobile-->
+        <section class="menu-mobile">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+                <div class="menu-main">
+                    <div class="menu-head">
+                        <h3>Danh mục</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8" stroke="#0A0822" stroke-linecap="round"/>
+                                <path d="M8 1L1 8" stroke="#0A0822" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Thực phẩm chức năng">Thực phẩm chức năng</a>
+
+                            <ul class="nav-list nav-list-lv0">
+                            <div class="toggle-sub-menu">
+                                <img src="./assets/image/icons/previous-menu.svg" alt="Back">
+                                <span>Thực phẩm chức năng</span>
+                                </div>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title="Demo sub menu">
+                                Demo sub menu
+                                </a>
+                                <ul class="nav-list nav-list-lv1">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" title="Demo sub menu">
+                                    Demo sub menu 2
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" title="Demo sub menu">
+                                    Demo sub menu 2
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title="Demo sub menu">
+                                Demo sub menu
+                                </a>
+                            </li>
+                            </ul>
+
+                            <div class="more">
+                            <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                            </div>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link " href="product-list.html" title="Làm đẹp">Làm đẹp</a>
+                            <ul class="nav-list nav-list-lv0">
+                            <div class="toggle-sub-menu">
+                                <img src="./assets/image/icons/previous-menu.svg" alt="Back">
+                                <span>Làm đẹp</span>
+                                </div>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title="Demo sub menu">
+                                Demo sub menu
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title="Demo sub menu">
+                                Demo sub menu
+                                </a>
+                            </li>
+                            </ul>
+
+                            <div class="more">
+                            <img src="./assets/image/icons/next.svg" alt="Xem thêm" title="Xem thêm">
+                            </div>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link " href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link " href="product-list.html" title="Mẹ và bé">Mẹ và bé</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Thực phẩm chức năng">Thực phẩm chức năng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Mẹ và bé">Mẹ và bé</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-list.html" title="Dinh dưỡng">Dinh dưỡng</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu-footer">
+                        <p>
+                            Hỗ trợ:
+                            <a href="tel:1900000000" title="1900 - 000000">1900 - 000000</a>
+                        </p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!--Popup Account-->
+        <section class="popup-account">
+            <div class="modal fade" id="popup-account"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="popup-accountLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8" stroke="#0A0822" stroke-linecap="round"/>
+                            <path d="M8 1L1 8" stroke="#0A0822" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                        <div class="popup-account-wrap">
+                            <h3>Đăng nhập</h3>
+
+                            <div class="account-form login">
+                                <form action="account-loggin" id="account-login" class="account-login">
+                                    <div class="form-row">
+                                        <div class="form-line form-line-full">
+                                            <input type="text" id="account-form-login" class="input error" placeholder="Nhập số điện thoại hoặc email của bạn" autocomplete="name" required 
+                                            title="Số điện thoại, email hoặc mật khẩu của bạn không hợp lệ. Vui lòng thử lại hoặc đăng nhập bằng hình thức khác"/>
+                                        </div>
+
+                                        <div class="form-line form-line-full">
+                                            <input type="password" class="password" id="password-form-login"  placeholder="Mật khẩu" autocomplete="current-password" required />
+
+                                            <div class="btn-show">
+                                                <img src="./assets/image/icons/eyes.svg" alt="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="account-form-error">
+                                        <span>*</span>
+                                        <p>Số điện thoại, email hoặc mật khẩu của bạn không hợp lệ. Vui lòng thử lại hoặc đăng nhập bằng hình thức khác</p>
+                                    </div>
+
+                                    <button type="submit" form="account-login" class="submit btn-main bg-violet" title="Tiếp theo">Tiếp theo</button>
+                                </form>
+
+                                <form action="account-register" id="account-register"  class="account-register">
+                                    <div class="form-row">
+                                        <div class="form-line form-line-full">
+                                            <input type="text" id="account-form-register" class="input error" placeholder="Nhập số điện thoại hoặc email của bạn" autocomplete="name" required 
+                                            title="Số điện thoại, email hoặc mật khẩu của bạn không hợp lệ. Vui lòng thử lại hoặc đăng nhập bằng hình thức khác"/>
+                                        </div>
+
+                                        <div class="form-line form-line-full">
+                                            <input type="password" id="password-form-register" placeholder="Mật khẩu" autocomplete="current-password" required />
+                                            <div class="btn-show">
+                                                <img src="./assets/image/icons/eyes.svg" alt="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="account-form-error d-none">
+                                        <span>*</span>
+                                        <p>Số điện thoại, email hoặc mật khẩu của bạn không hợp lệ. Vui lòng thử lại hoặc đăng nhập bằng hình thức khác</p>
+                                    </div>
+
+                                    <button type="submit" form="account-register" class="submit btn-main bg-violet" title="Tiếp theo">Tiếp theo</button>
+                                </form>
+                            </div>
+
+                            <div class="action-orther">
+                                <span>Quên mật khẩu</span>
+                                <span>Đăng nhập với SMS</span>
+                            </div>
+
+                            <div class="login-orther">
+                                <h4>Hoặc đăng nhập bằng</h4>
+                                <div class="login-orther-list">
+                                    <div class="login-orther-item">
+                                        <img src="./assets/image/icons/login-email.svg" alt="Gmail" title="Gmail">
+                                    </div>
+                                    <div class="login-orther-item">
+                                        <img src="./assets/image/icons/login-facebook.svg" alt="Facebook" title="Facebook">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="register-action">
+                                <h4>Bạn chưa có tài khoản?</h4>
+                                <span class="swap-form">Đăng ký ngay</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Popup OTP-->
+        <section class="popup-account popup-otp">
+            <div class="modal fade" id="popup-otp"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="popup-otpLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8" stroke="#0A0822" stroke-linecap="round"/>
+                                <path d="M8 1L1 8" stroke="#0A0822" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="popup-otp-wrap">
+                            <h3>Đăng ký</h3>
+
+                            <p class="otp-content">Mã xác minh đã được gửi tới số điện thoại</p>
+                            <span class="otp-phone">034 4535 345</span>
+
+                            <div class="otp-form">
+                                <form action="otpForm" id="otpForm">
+                                    <div class="form-row">
+                                        <input type="text" id="otp-1" value="1" min="0" max="9" required>
+                                        <input type="text" id="otp-2" value="1" min="0" max="9" required>
+                                        <input type="text" id="otp-3" value="1" min="0" max="9" required>
+                                        <input type="text" id="otp-4" value="1" min="0" max="9" required>
+                                        <input type="text" id="otp-5" value="1" min="0" max="9" required>
+                                        <input type="text" id="otp-6" value="1" min="0" max="9" required>
+                                    </div>
+
+                                    <button type="submit" form="otpForm" class="submit btn-main bg-violet" title="Xác nhẬn">Xác nhẬn</button>
+                                </form>
+
+                                <button class="back btn-main bg-violet-light" title="Quay lại">Quay lại</button>
+                            </div>
+
+                            <button class="btn-main otp-countdown" title=" Gửi lại mã">
+                                Gửi lại mã <span>(60s)</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="col-logo">
+                    <a href="/" class="logo" title="Jinsei's">
+                        <img src="./assets/image/logo.png" alt="Jinsei's" title="Jinsei's">
+                    </a>
+
+                    <div class="bct d-none d-lg-block">
+                        <h4>Chứng nhận bởi</h4>
+                        <img src="./assets/image/logo-bct.svg" alt="Bộ công thương" title="Bộ công thương">
+                    </div>
+                </div>
+
+                <div class="col-info">
+                    <h4>CÔNG TY CỔ PHẦN JINSEI</h4>
+                    <div class="info-item">
+                        <p>
+                            <span>Địa chỉ: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <span>SĐT: <a class="phone" href="tel:1900000000" title="1900000000">1900000000</a></span> 
+                         <span>-</span>
+                        <span>Email: <a class="email" href="mailto:support@jinsei.com" title="Email">support@jinsei.com</a></span>
+                    </div>
+
+                    <div class="info-item">
+                        <p>
+                            <span>Mã số thuế: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-group-link">
+                    <div class="col-link-item">
+                        <h4>Về Jinsei</h4>
+                        <ul class="links">
+                            <li class="link">
+                                <a href="#" title="Giới thiệu Jinsei">Giới thiệu Jinsei</a>
+                                <a href="#" title="Quy chế hoạt động">Quy chế hoạt động</a>
+                                <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                <a href="#" title="Chính sách giao hàng">Chính sách giao hàng</a>
+                                <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                <a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                                <a href="#" title="Chương trình thành viên">Chương trình thành viên</a>
+                                <a href="#" title="Chương trình Affiliate">Chương trình Affiliate</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-link-item">
+                        <h4>Danh mục sản phẩm</h4>
+                        <ul class="links">
+                            <li class="link">
+                                <a href="#" title="Thực phẩm chức năng">Thực phẩm chức năng</a>
+                                <a href="#" title="Làm đẹp">Làm đẹp</a>
+                                <a href="#" title="Dinh dưỡng">Dinh dưỡng</a>
+                                <a href="#" title="Mẹ và bé">Mẹ và bé</a>
+                                <a href="#" title="Ngành hàng">Ngành hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-last">
+                    <div class="col-social">
+                        <h4>Kết nối với jinsei</h4>
+                        <div class="social-list">
+                            <a href="#" title="Facebook">
+                                <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 6V4C5 3.448 5.448 3 6 3H7V0.5H5C3.343 0.5 2 1.843 2 3.5V6H0V8.5H2V16.5H5V8.5H7L8 6H5Z" fill="black"/>
+                                </svg>
+                            </a>
+                            <a href="#" title="Instagram">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2001_6995)">
+                                    <path d="M11 0.5H5C2.239 0.5 0 2.739 0 5.5V11.5C0 14.261 2.239 16.5 5 16.5H11C13.761 16.5 16 14.261 16 11.5V5.5C16 2.739 13.761 0.5 11 0.5ZM14.5 11.5C14.5 13.43 12.93 15 11 15H5C3.07 15 1.5 13.43 1.5 11.5V5.5C1.5 3.57 3.07 2 5 2H11C12.93 2 14.5 3.57 14.5 5.5V11.5Z" fill="black"/>
+                                    <path d="M8 4.5C5.791 4.5 4 6.291 4 8.5C4 10.709 5.791 12.5 8 12.5C10.209 12.5 12 10.709 12 8.5C12 6.291 10.209 4.5 8 4.5ZM8 11C6.622 11 5.5 9.878 5.5 8.5C5.5 7.121 6.622 6 8 6C9.378 6 10.5 7.121 10.5 8.5C10.5 9.878 9.378 11 8 11Z" fill="black"/>
+                                    <path d="M12.3 4.73299C12.5943 4.73299 12.833 4.49436 12.833 4.19999C12.833 3.90562 12.5943 3.66699 12.3 3.66699C12.0056 3.66699 11.767 3.90562 11.767 4.19999C11.767 4.49436 12.0056 4.73299 12.3 4.73299Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2001_6995">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" title="Youtube">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.32 1.06C14.886 0.288 14.415 0.146 13.456 0.092C12.498 0.027 10.089 0 8.002 0C5.911 0 3.501 0.0270001 2.544 0.0910001C1.587 0.146 1.115 0.287 0.677 1.06C0.23 1.831 0 3.159 0 5.497V5.505C0 7.833 0.23 9.171 0.677 9.934C1.115 10.706 1.586 10.846 2.543 10.911C3.501 10.967 5.911 11 8.002 11C10.089 11 12.498 10.967 13.457 10.912C14.416 10.847 14.887 10.707 15.321 9.935C15.772 9.172 16 7.834 16 5.506V5.501V5.498C16 3.159 15.772 1.831 15.32 1.06ZM6 8.5V2.5L11 5.5L6 8.5Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-ecommerce">
+                        <h4>Kênh phân phối</h4>
+                        <a href="#" title="Lazada">
+                            <img src="./assets/image/lazada.svg" alt="Lazada" title="Lazada">
+                        </a>
+
+                        <a href="#" title="Shopee">
+                            <img src="./assets/image/shopee.svg" alt="Shopee" title="Shopee">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-payment-mb">
+                    <div class="bct">
+                        <h4>Chứng nhận bởi</h4>
+                        <img src="./assets/image/logo-bct.svg" alt="Bộ công thương" title="Bộ công thương">
+                    </div>
+
+                    <div class="payment-mothod">
+                        <p>Phương thức thanh toán</p>
+                        <div class="list-method">
+                            <img src="./assets/image/icons/visa.svg" alt="Visa" title="Visa">
+                            <img src="./assets/image/icons/vnpay.svg" alt="VNPay" title="VNPay">
+                            <img src="./assets/image/icons/zalopay.svg" alt="ZaloPay" title="ZaloPay">
+                            <img src="./assets/image/icons/momo.svg" alt="Mommo" title="Mommo">
+                            <img src="./assets/image/icons/mastercard.svg" alt="Mastercard" title="Mastercard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2024 - Bản quyền thuộc về Công ty Cổ phần JINSEI</p>
+                </div>
+
+                <div class="payment-mothod">
+                    <p>Phương thức thanh toán</p>
+                    <div class="list-method">
+                        <img src="./assets/image/icons/visa.svg" alt="Visa" title="Visa">
+                        <img src="./assets/image/icons/vnpay.svg" alt="VNPay" title="VNPay">
+                        <img src="./assets/image/icons/zalopay.svg" alt="ZaloPay" title="ZaloPay">
+                        <img src="./assets/image/icons/momo.svg" alt="Mommo" title="Mommo">
+                        <img src="./assets/image/icons/mastercard.svg" alt="Mastercard" title="Mastercard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
