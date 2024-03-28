@@ -331,6 +331,38 @@ if(btnCloseSubmenu) {
     },
   }) || false;
 
+   //Slider Partner
+  document.addEventListener('DOMContentLoaded', () => {
+    //Slider partner
+    const swiperPartnerEl = document.querySelector('.partners .swiper')
+
+    if(swiperPartnerEl) {
+      const swiperPartner = new Swiper(swiperPartnerEl, {
+        direction: 'horizontal',
+        slidesPerView: 5,
+        spaceBetween: 20,
+        speed: 1000,
+        watchOverflow: true,
+        navigation: {
+          nextEl: '.partners .swiper-button-next',
+          prevEl: '.partners .swiper-button-prev',
+        },
+      }) || false;
+  
+      if(window.innerWidth < 992) {
+        swiperPartner.destroy(true, true)
+      }
+  
+      window.addEventListener('resize', () => {
+        if(window.innerWidth < 992) {
+          swiperPartner.destroy(true, true)
+        }
+      })
+    }
+  })
+
+
+
   //Set time Flash sale
   
   //Time flash sale

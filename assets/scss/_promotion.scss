@@ -159,14 +159,12 @@
         }
 
         .btn-condition {
-            position: relative;
             font-size: 16px;
             color: var(--violet-dark);
             font-weight: 700;
             line-height: 1.25em;
             width: 100%;
             text-align: right;
-            z-index: 2;
         }
 
         .voucher-condition {
@@ -231,6 +229,14 @@
     }
 }
 
+@include landscape-phone {
+    .promotion-detail {
+        .voucher-list {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
 @include extra-mobile {
     .promotions {
         .title-page {
@@ -263,6 +269,10 @@
             font-size: 10px;
             padding: 8px 20px;
         }
+    }
+
+    .promotion-detail {
+        margin-bottom: 40px;
     }
 
     .promotions-orther {

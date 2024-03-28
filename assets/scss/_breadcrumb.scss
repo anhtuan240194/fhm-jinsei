@@ -12,21 +12,27 @@
       position: relative;
       z-index: 1;
       padding: 2px 0;
+      overflow: hidden;
     }
 
     .breadcrumb-link {
         color: var(--grey-darker);
+        flex: 0 0 max-content;
+        max-width: max-content;
         
         &:last-child {
-            font-weight: 700;
-            max-width: 50%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
-            white-space: unset;
+          flex: 1;
+          max-width: initial;
+          font-weight: 700;
+          max-width: 50%;
+          
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          white-space: unset;
         }
     }
   }
