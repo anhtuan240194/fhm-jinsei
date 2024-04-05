@@ -522,3 +522,104 @@ if(btnCloseSubmenu) {
       })
     })
   }
+
+
+  //Select Province and district cart
+  const formNoUserCart = document.querySelector('.cart-information')
+  if(formNoUserCart) {
+    const localpicker = new LocalPicker({
+      province: "ls_province",
+      district: "ls_district",
+      ward: "ls_ward"
+      });
+  }
+
+  //Show bill details cart
+  const showBillDetails = document.querySelector('.cart .show-bill-detail')
+  if(showBillDetails) {
+    const billDetails = document.querySelector('.cart .cart-bill-detail')
+    showBillDetails.addEventListener('click', () => {
+      billDetails.classList.toggle('show')
+    })
+  }
+
+  //Auto fill code voucher list
+  const btnsUseVoucher = document.querySelectorAll('.voucher-list .voucher-item .use')
+  if(btnsUseVoucher) {
+    Array.from(btnsUseVoucher).forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const code = btn.closest('.voucher-item').querySelector('.code').textContent
+        const statusVoucher = document.querySelector('.add-voucher-code')
+        const inputApply = document.querySelector('.input-apply-voucher')
+
+        if(inputApply) {
+          inputApply.value = code
+        }
+
+        if(statusVoucher) {
+          statusVoucher.textContent = code
+        }
+      })
+    })
+  }
+
+  //Hidden cart right when scrolling down
+  //Option check view port 
+  const optionObserver = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  }
+
+  const footer = document.querySelector('footer')
+  const cartRight = document.querySelector('.cart .cart-right')
+
+  const footerCallback = (entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        cartRight.classList.add('hiden-cart')
+      } else {
+        cartRight.classList.remove('hiden-cart')
+      }
+    })
+  }
+
+  if(footer && cartRight) {
+    const observerDiscovery = new IntersectionObserver(footerCallback, optionObserver )
+    observerDiscovery.observe(footer)
+  }
+
+  //Counts the number of HTML characters on review form
+  const inputReviewContents = document.querySelectorAll('.popup-review .review-content textarea')
+  if(inputReviewContents) {
+    Array.from(inputReviewContents).forEach((textarea) => {
+      const text = textarea.closest('.review-content').querySelector('.text-max span')
+      textarea.addEventListener('input', () => {
+        if(textarea.value.length > 500) {
+          return
+        }
+
+        text.textContent = textarea.value.length
+      })
+    })
+  }
+
+    //Select Province and district cart
+    const formEditAddressCustomer = document.querySelector('.edit-address-customer')
+    if(formEditAddressCustomer) {
+      const localpicker = new LocalPicker({
+        province: "ls_province",
+        district: "ls_district",
+        ward: "ls_ward"
+        });
+    }
+
+  //Show modal edit address customer page
+  const btnShowEditAddress = document.querySelector('.customer-address-page .btn-add-address')
+  if(btnShowEditAddress) {
+    const modal = document.querySelector('.customer-address-page .customer-info')
+
+    btnShowEditAddress.addEventListener("click", () => {
+      modal.classList.toggle('show-edit')
+    })
+  }

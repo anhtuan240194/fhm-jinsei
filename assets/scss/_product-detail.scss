@@ -237,8 +237,14 @@
             }
         }
 
+        .add-voucher {
+            margin-bottom: 13px;
+        }
+
         .detail-variants {
             margin-bottom: 16px;
+            padding-top: 12px;
+            border-top: 1px solid #E6E6E6;
 
             .variant-item {
                 display: flex;
@@ -347,6 +353,7 @@
     align-items: center;
     height: 39px;
     border-radius: 100px;
+    background-color: #fff;
     border: 1px solid var(--neutural-light-hv);
 
     button {
