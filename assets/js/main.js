@@ -623,3 +623,36 @@ if(btnCloseSubmenu) {
       modal.classList.toggle('show-edit')
     })
   }
+
+  //Check view all norti
+  const btnViewAllNorti = document.querySelector('.customer-norti-page .btn-view-all')
+  if(btnViewAllNorti) {
+    const nortis = document.querySelectorAll('.customer-norti-page .norti-item.not-seen')
+
+    btnViewAllNorti.addEventListener("click", () => {
+      if(nortis) {
+        Array.from(nortis).forEach((norti) => {
+          norti.classList.remove('not-seen')
+        })
+      }
+    })
+
+  }
+
+  //Show - Hide password input
+  const boxPassword = document.querySelectorAll('.input-password')
+  if(boxPassword) {
+    Array.from(boxPassword).forEach((box) => {
+      const btn = box.querySelector('.show')
+      const input = box.querySelector('input')
+      btn.addEventListener("click", () => {
+        if(input.getAttribute('type') === 'text'){
+          input.setAttribute('type', 'password')
+          return
+        }
+
+        input.setAttribute('type', 'text')
+      })
+    })
+
+  }

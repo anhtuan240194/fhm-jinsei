@@ -6430,8 +6430,8 @@ footer .payment-mothod .list-method {
   padding: 0;
 }
 .customer-address-page .customer-info.show-edit .customer-address-edit {
+  display: block;
   opacity: 1;
-  visibility: visible;
   transform: translateY(0);
 }
 .customer-address-page .customer-info.show-edit > .customer-address-head, .customer-address-page .customer-info.show-edit .list-address {
@@ -6552,8 +6552,8 @@ footer .payment-mothod .list-method {
   color: #fff;
 }
 .customer-address-page .customer-address-edit {
+  display: none;
   opacity: 0;
-  visibility: hidden;
   transition: all 0.5s ease;
   transform: translateY(30px);
   background-color: #fff;
@@ -6654,9 +6654,209 @@ footer .payment-mothod .list-method {
   background-color: var(--violet-dark);
 }
 
+.customer-norti-page .customer-info {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.customer-norti-page .customer-norti-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 35px 14px 23px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.customer-norti-page .customer-norti-head .title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--violet);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.customer-norti-page .customer-norti-head .title p {
+  color: var(--neutural);
+}
+.customer-norti-page .customer-norti-head .btn-view-all {
+  color: #A4A4A4;
+}
+.customer-norti-page .list-norti {
+  border-radius: 12px;
+  background-color: #fff;
+}
+.customer-norti-page .norti-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 34px 20px 23px;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: all 0.35s ease;
+}
+.customer-norti-page .norti-item:hover {
+  background-color: var(--neutural-light);
+}
+.customer-norti-page .norti-item.not-seen {
+  background-color: var(--violet-light);
+}
+.customer-norti-page .norti-item .norti-image {
+  flex: 0 0 75px;
+  max-width: 75px;
+  aspect-ratio: 1;
+}
+.customer-norti-page .norti-item .norti-image img {
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+.customer-norti-page .norti-item .title {
+  font-weight: 500;
+  max-width: 593px;
+  color: var(--violet-dark);
+  line-height: 1.4em;
+  margin-bottom: 3px;
+}
+.customer-norti-page .norti-item .sum {
+  font-size: 12px;
+  line-height: 1.5em;
+  max-width: 593px;
+  color: var(--neutural);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: unset;
+}
+.customer-norti-page .norti-item .view-more {
+  font-size: 12px;
+  color: var(--violet);
+  padding: 8px 13px;
+  max-width: 92px;
+  flex: 0 0 92px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: 1px solid var(--violet-light);
+  transition: all 0.35s ease;
+}
+.customer-norti-page .norti-item .view-more:hover {
+  color: #fff;
+  background-color: var(--violet);
+}
+
+.customer-information-page .customer-info .customer-loyal-head {
+  margin-bottom: 17px;
+}
+.customer-information-page .customer-info .information-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.customer-information-page .customer-info .information-head h3 {
+  font-size: 18px;
+  color: var(--violet);
+  font-weight: 700;
+}
+.customer-information-page .customer-info .information-head .edit-information {
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 11px 20px 10px;
+}
+.customer-information-page .customer-info .personal-information {
+  border-top: 1px solid #606060;
+  padding-top: 23px;
+  margin-bottom: 32px;
+}
+.customer-information-page .customer-info .customer-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.customer-information-page .customer-info .customer-information-item {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.customer-information-page .customer-info .customer-information-item:nth-child(2) {
+  grid-row: 2/3;
+}
+.customer-information-page .customer-info .customer-information-item:nth-child(3) {
+  grid-row: 3/4;
+}
+.customer-information-page .customer-info .customer-information-item .title {
+  flex: 0 0 86px;
+  max-width: 86px;
+  color: var(--neutural-hv);
+}
+.customer-information-page .customer-info .customer-information-item p, .customer-information-page .customer-info .customer-information-item .add-information {
+  color: var(--violet-dark);
+  font-weight: 500;
+  padding: 0;
+}
+.customer-information-page .customer-info .customer-password {
+  border-top: 1px solid #606060;
+  padding-top: 23px;
+}
+.customer-information-page .customer-info .customer-password-input form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+.customer-information-page .customer-info .customer-password-input form .form-line {
+  flex: 1;
+  max-width: initial;
+}
+.customer-information-page .customer-info .customer-password-input form label {
+  font-size: 12px;
+  color: #404040;
+  margin-bottom: 6px;
+}
+.customer-information-page .customer-info .customer-password-input form input {
+  font-size: 12px;
+  padding: 12px 50px 12px 20px;
+  border-radius: 100px;
+}
+.customer-information-page .customer-info .customer-password-input form .input-password {
+  position: relative;
+}
+.customer-information-page .customer-info .customer-password-input form .show {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+.customer-information-page .customer-info .customer-password-input form .submit {
+  flex: 0 0 max-content;
+  max-width: fit-content;
+  font-weight: 500;
+  background-color: var(--violet);
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 12px 22px 11px;
+  border-radius: 100px;
+}
+.customer-information-page .customer-info .customer-password-input form .submit:hover {
+  background-color: var(--violet-hv);
+}
+
 @media only screen and (max-width: 1399.98px) {
   .customer-order-page .customer-order .tabs .tab-item {
     padding: 10px 16px;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  .customer-information-page .customer-info .customer-information-item {
+    gap: 20px;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 991.98px) {
@@ -6769,6 +6969,20 @@ footer .payment-mothod .list-method {
   .customer-order-page .customer-order .order-item .order-foot .order-footer-btns > * {
     padding: 6px 23px 5px;
   }
+  .customer-information-page .customer-info .customer-loyal-head {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .customer-information-page .customer-info .customer-information {
+    grid-template-columns: 1fr;
+  }
+  .customer-information-page .customer-info .customer-password-input form {
+    flex-wrap: wrap;
+  }
+  .customer-information-page .customer-info .customer-password-input form .form-line {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 576.98px) {
   .customer-page .container {
@@ -6811,10 +7025,47 @@ footer .payment-mothod .list-method {
     flex: 0 0 100%;
     text-align: right;
   }
-  .customer-address-page .customer-address-head {
+  .customer-address-page .customer-address-edit .customer-address-head {
     margin-bottom: 20px;
   }
-  .customer-address-page .customer-address-head .title p {
+  .customer-address-page .customer-address-edit .customer-address-head .title p {
+    display: none;
+  }
+  .customer-address-page .customer-address-edit .form-line input, .customer-address-page .customer-address-edit .form-line select {
+    padding: 11px 45px 11px 13px;
+  }
+  .customer-address-page .customer-address-edit .form-line textarea {
+    height: 92px;
+  }
+  .customer-address-page .customer-address-edit .set-class {
+    justify-content: center;
+    gap: 29px;
+    margin-bottom: 24px;
+  }
+  .customer-address-page .customer-address-edit .submit {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .customer-norti-page .container {
+    padding: 0;
+    background-color: transparent;
+  }
+  .customer-norti-page .customer-norti-head {
+    padding: 16px 10px;
+  }
+  .customer-norti-page .customer-norti-head .title p {
+    display: none;
+  }
+  .customer-norti-page .list-norti {
+    background-color: transparent;
+  }
+  .customer-norti-page .norti-item {
+    margin-bottom: 10px;
+  }
+  .customer-norti-page .norti-item:last-child {
+    margin-bottom: 0;
+  }
+  .customer-norti-page .norti-item .view-more {
     display: none;
   }
 }

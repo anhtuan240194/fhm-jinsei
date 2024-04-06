@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/swiper/swiper.css" />
     <link rel="icon" href="./assets/image/icons/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Địa chỉ tôi</title>
+    <title>Thông tin cá nhân</title>
 </head>
 
 <body>
@@ -516,13 +516,13 @@
                     <span class="breadcrumb-arrow">/</span>
                     <a href="customer-loyal.html" title=" Thông tin tài khoản " class="breadcrumb-link"> Thông tin tài khoản </a>
                     <span class="breadcrumb-arrow">/</span>
-                    <a href="customer-loyal.html" title="Đơn hàng của tôi" class="breadcrumb-link">Địa chỉ tôi</a>
+                    <a href="customer-loyal.html" title="Thông báo" class="breadcrumb-link">Thông tin cá nhân</a>
                 </div>
             </div>
         </section>
 
         <!--Customer Page-->
-        <section class="customer-page customer-address-page">
+        <section class="customer-page customer-information-page">
             <div class="container">
                 <div class="customer-wrap">
                     <div class="customer-sidebar">
@@ -556,7 +556,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="customer-address.html" class="nav-link active" title="Quản lý địa chỉ">
+                                <a href="customer-address.html" class="nav-link" title="Quản lý địa chỉ">
                                     <div class="nav-link-icon">
                                         <img src="./assets/image/icons/customer-address.svg" alt="Quản lý địa chỉ">
                                     </div>
@@ -598,7 +598,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="customer-norti.html" class="nav-link" title="Thông báo">
+                                <a href="customer-norti.html" class="nav-link active" title="Thông báo">
                                     <div class="nav-link-icon">
                                         <img src="./assets/image/icons/customer-norti.svg" alt="Thông báo">
                                     </div>
@@ -626,119 +626,89 @@
                     </div>
 
                     <div class="customer-info">
-                        <div class="customer-address-head">
-                            <div class="title">
-                                <h2>Địa chỉ của tôi</h2>
-                                <p>Quản lý danh sách địa chỉ</p>
+                        <div class="customer-loyal-head">
+                            <h2 class="title">
+                                <span class="hello">Xin chào.</span>
+                                <p class="name">bui anh tuan</p>
+                            </h2>
+
+                            <div class="avatar-user">
+                                <img src="./assets/image/avatar-user.png" alt="Avatar" title="Avatar">
                             </div>
 
-                            <button class="btn-add-address bg-violet" title="Thêm địa chỉ mới">
-                                Thêm địa chỉ mới
-                            </button>
+                            <p class="bonus-point">Điểm thưởng: <span>12.000 đ</span></p>
                         </div>
-                        
-                        <div class="list-address">
-                            <div class="address-item">
-                                <div class="address-head">
-                                    <div class="address-head-info">
-                                        <p class="address-name">Bùi Anh Tuấn </p>
-                                        <span class="line"></span>
-                                        <p class="address-phone">+84-795-552-31</p>
-                                    </div>
 
-                                    <button class="address-update" title="Cập nhật">Cập nhật</button>
-                                </div>
-                                <p class="address-sum">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                </p>
-
-                                <div class="address-foot">
-                                    <div class="address-class">
-                                        <div class="class-item class-default">Mặc định</div>
-                                        <div class="class-item">Nhà riêng</div>
-                                    </div>
-                                </div>
+                        <div class="personal-information">
+                            <div class="information-head">
+                                <h3>Thông tin cá nhân</h3>
+                                <button class="edit-information bg-violet-light" title="Chỉnh sửa thông tin">Chỉnh sửa thông tin</button>
                             </div>
 
-                            <div class="address-item">
-                                <div class="address-head">
-                                    <div class="address-head-info">
-                                        <p class="address-name">Bùi Anh Tuấn </p>
-                                        <span class="line"></span>
-                                        <p class="address-phone">+84-795-552-31</p>
-                                    </div>
-
-                                    <button class="address-update" title="Cập nhật">Cập nhật</button>
+                            <div class="customer-information">
+                                <div class="customer-information-item">
+                                    <span class="title">Họ và tên:</span>
+                                    <p>Bùi Anh Tuấn</p>
                                 </div>
-                                <p class="address-sum">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                </p>
 
-                                <div class="address-foot">
-                                    <div class="address-class">
-                                        <div class="class-item">Nhà riêng</div>
-                                    </div>
+                                <div class="customer-information-item">
+                                    <span class="title">Số điện thoại:</span>
+                                    <p>(+84)-795-552-31</p>
+                                </div>
 
-                                    <button class="set-default" title="Đặt làm địa chỉ mặc định">Đặt làm địa chỉ mặc định</button>
+                                <div class="customer-information-item">
+                                    <span class="title">Email:</span>
+                                    <p>tuan.bui@example.com</p>
+                                </div>
+
+                                <div class="customer-information-item">
+                                    <span class="title">Giới tính:</span>
+                                    <button class="add-information" title="Thêm thông tin">Thêm thông tin</button>
+                                </div>
+
+                                <div class="customer-information-item">
+                                    <span class="title">Ngày sinh:</span>
+                                    <button class="add-information" title="Thêm thông tin">Thêm thông tin</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="customer-address-edit">
-                            <div class="customer-address-head">
-                                <div class="title">
-                                    <h2>Địa chỉ của tôi</h2>
-                                    <p>Nhập thông tin địa chỉ giao hàng của bạn</p>
-                                </div>
+                        <div class="customer-password">
+                            <div class="information-head">
+                                <h3>Đổi mật khẩu</h3>
                             </div>
 
-                            <form action="edit-address-customer" id="edit-address-customer" class="edit-address-customer">
-                                <div class="form-row">
-                                    <div class="form-line form-line-full">
-                                        <input type="text" id="name-edit-address" class="input" placeholder="Họ và tên*" autocomplete="name" required>
-                                    </div>
+                            <div class="customer-password-input">
+                                <form action="edit-password" id="edit-password">
+                                    <div class="form-line">
+                                        <label for="current-password">Mật khẩu hiện tại</label>
+                                        <div class="input-password">
+                                            <input type="password" id="current-password" placeholder="Nhập mật khẩu hiện tại*" required>
 
-                                    <div class="form-line form-line-full">
-                                        <input type="text" id="phone-edit-address" class="input" placeholder="Số điện thoại*" autocomplete="name" required>
-                                    </div>
-
-                                    <div class="form-line form-line-full">
-                                        <select name="ls_province" id="edit-address-province"></select>
-                                    </div>
-
-                                    <div class="form-line form-line-full">
-                                        <select name="ls_district" id="edit-address-district"></select>
-                                    </div>
-
-                                    <div class="form-line form-line-full">
-                                        <select name="ls_ward" id="edit-address-ward"></select>
-                                    </div>
-
-                                    <div class="form-line form-line-full">
-                                        <textarea name="note-edit-address" id="notephone-edit-address" cols="30" rows="10" placeholder="Địa chỉ cụ thể (VD....)"></textarea>
-                                    </div>
-
-                                    <div class="set-class">
-                                        <div class="list-class">
-                                            <label class="class-item">
-                                                <input type="checkbox" value="Nhà riêng">
-                                                <span>Nhà riêng</span>
-                                            </label>
-                                            <label class="class-item">
-                                                <input type="checkbox" value="Công ty">
-                                                <span>Công ty</span>
-                                            </label>
+                                            <button type="button" class="show">
+                                                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5 13.9983C9.614 14.019 7.74737 13.6649 6.04234 12.9639C4.71756 12.4012 3.53053 11.6268 2.54513 10.6824C1.49571 9.70048 0.671322 8.55818 0.115 7.31511L0 6.99882L0.121053 6.68304C0.677832 5.44141 1.50036 4.29977 2.54634 3.31682C3.53136 2.37246 4.71798 1.59807 6.04234 1.03534C7.74415 0.334646 9.61199 -0.0195618 11.5 0.000372924C13.386 -0.0203678 15.2526 0.33378 16.9577 1.03482C18.2825 1.59742 19.4695 2.37181 20.4549 3.3163C21.5063 4.29673 22.3309 5.43919 22.885 6.68304L23 6.99934L22.8789 7.31511C21.0753 11.3984 16.5303 14.0673 11.5 13.9983ZM11.5 2.0003C7.58516 1.89348 3.99232 3.87526 2.43437 6.99985C3.99171 10.125 7.58516 12.1062 11.5 11.9994C15.4148 12.1057 19.0077 10.1244 20.5656 7.00037C19.0101 3.87319 15.4154 1.89141 11.5 2.0003ZM11.5 9.99897C9.84097 10.0088 8.4059 8.99667 8.07421 7.58319C7.74253 6.16971 8.60684 4.75 10.1382 4.19363C11.6683 3.63726 13.4381 4.1003 14.3617 5.29808C14.8101 5.88063 15.012 6.57719 14.9338 7.27176C14.8556 7.96633 14.502 8.617 13.9319 9.11541C13.616 9.39431 13.238 9.61618 12.8203 9.76793C12.4026 9.91968 11.9537 9.99824 11.5 9.99897Z" fill="black"/>
+                                                    </svg>
+                                            </button>
                                         </div>
-
-                                        <button class="set-address-default">
-                                            <input type="checkbox" id="set-address-default">
-                                            <label for="set-address-default">Đặt làm địa chỉ mặc định</label>
-                                        </button>
                                     </div>
-                                </div>
 
-                                <button type="submit" form="edit-address-customer" class="submit" title="Thêm">Thêm</button>
-                            </form>
+                                    <div class="form-line">
+                                        <label for="current-password">Mật khẩu mới</label>
+                                        <div class="input-password">
+                                            <input type="password" id="new-password" placeholder="Mật khẩu mới*" required>
+
+                                            <button type="button" class="show">
+                                                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5 13.9983C9.614 14.019 7.74737 13.6649 6.04234 12.9639C4.71756 12.4012 3.53053 11.6268 2.54513 10.6824C1.49571 9.70048 0.671322 8.55818 0.115 7.31511L0 6.99882L0.121053 6.68304C0.677832 5.44141 1.50036 4.29977 2.54634 3.31682C3.53136 2.37246 4.71798 1.59807 6.04234 1.03534C7.74415 0.334646 9.61199 -0.0195618 11.5 0.000372924C13.386 -0.0203678 15.2526 0.33378 16.9577 1.03482C18.2825 1.59742 19.4695 2.37181 20.4549 3.3163C21.5063 4.29673 22.3309 5.43919 22.885 6.68304L23 6.99934L22.8789 7.31511C21.0753 11.3984 16.5303 14.0673 11.5 13.9983ZM11.5 2.0003C7.58516 1.89348 3.99232 3.87526 2.43437 6.99985C3.99171 10.125 7.58516 12.1062 11.5 11.9994C15.4148 12.1057 19.0077 10.1244 20.5656 7.00037C19.0101 3.87319 15.4154 1.89141 11.5 2.0003ZM11.5 9.99897C9.84097 10.0088 8.4059 8.99667 8.07421 7.58319C7.74253 6.16971 8.60684 4.75 10.1382 4.19363C11.6683 3.63726 13.4381 4.1003 14.3617 5.29808C14.8101 5.88063 15.012 6.57719 14.9338 7.27176C14.8556 7.96633 14.502 8.617 13.9319 9.11541C13.616 9.39431 13.238 9.61618 12.8203 9.76793C12.4026 9.91968 11.9537 9.99824 11.5 9.99897Z" fill="black"/>
+                                                    </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" form="edit-password" class="submit" title="Lưu thay đổi">Lưu thay đổi</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
