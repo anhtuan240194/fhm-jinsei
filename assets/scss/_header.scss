@@ -315,14 +315,6 @@ header {
         height: 45px;
         cursor: pointer;
 
-        &:hover {
-          .noti-box {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
         .quantity {
           position: absolute;
           top: -1px;
@@ -352,85 +344,6 @@ header {
             font-weight: 700;
             z-index: 2;
           }
-        }
-
-        .noti-box {
-          position: absolute;
-          right: 0;
-          top: 50px;
-          width: 506px;
-          visibility: hidden;
-          opacity: 0;
-          transform: translateY(15px);
-
-          border-radius: 12px;
-          background-color: #F8F8F8;
-          padding: 15px 0;
-          transition: all 0.35s ease;
-          z-index: 2;
-
-          h4 {
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            text-align: center;
-          }
-
-          .noti-list {
-            margin-bottom: 10px;
-          }
-
-          .noti-view-more {
-            text-align: center;
-            padding: 16px 0 0;
-            margin: 0 18px ;
-            border-top: 1px solid var(--violet-light-ac);
-            font-size: 16px;
-            color: var(--violet-dark);
-            line-height: 1.5;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      .noti-item {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        column-gap: 12px;
-        padding: 20px 18px;
-
-        &:hover {
-          background-color: var(--violet-light);
-        }
-
-        .noti-image {
-          flex: 0 0 75px;
-          max-width: 75px;
-        }
-
-        .noti-title {
-          font-weight: 500;
-          line-height: 1.4;
-          margin-bottom: 3px;
-        }
-
-        .noti-des {
-          font-size: 12px;
-          line-height: 1.5;
-          color: var(--neutural);
-          
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          white-space: unset;
-      
         }
       }
     }
@@ -738,17 +651,6 @@ header {
           span {
             color: #fff;
             font-size: 10px;
-          }
-        }
-      }
-    }
-
-    .header-bottom {
-      .header-noti {
-        .noti {
-          .noti-box {
-            width: calc(100vw - 20px);
-            max-width: 460px;
           }
         }
       }

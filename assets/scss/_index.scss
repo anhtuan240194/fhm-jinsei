@@ -51,7 +51,7 @@
 
     .category-wrap {
         position: relative;
-        padding: 36px 70px 46px;
+        padding: 36px 70px 32px;
         background-color: #fff;
         border-radius: 12px;
 
@@ -89,6 +89,7 @@
             text-align: center;
             font-weight: 500;
             color: var(--violet);
+            padding: 0 10px;
 
             &:hover {
                 color: var(--violet-hv);
@@ -99,7 +100,8 @@
 
 .box-countdown {
     display: inline-flex;
-    gap: 9px;
+    align-items: center;
+    gap: 3px;
 
     .countdown-item {
         border-radius: 4px;
@@ -109,6 +111,10 @@
         padding: 5px;
         color: #fff;
         height: 25px;
+    }
+
+    .dots {
+        color: var(--red);
     }
 }
 
@@ -130,6 +136,7 @@
     }
 
     .flash-sale-wrap {
+        position: relative;
         padding: 27px 22px 22px;
         background-color: var(--violet);
         border-radius: 12px;
@@ -138,7 +145,19 @@
     .product-item {
         .sold {
             margin-bottom: 10px;
+            font-size: 10px;
+            color: var(--neutural);
         }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    .swiper-button-next {
+        right: 0;
+        transform: translateX(50%);
     }
 }
 
@@ -177,6 +196,10 @@
             bottom: 0;
             right: 0;
         }
+    }
+
+    .slide-product {
+        position: relative;
     }
 }
 

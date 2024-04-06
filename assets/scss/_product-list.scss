@@ -120,7 +120,7 @@
             }
 
             .sortby-toggle {
-                padding: 8px 28px 7px;
+                padding: 8px 18px 7px;
                 border-radius: 50px;
                 column-gap: 19px;
 
@@ -146,6 +146,7 @@
                     color: var(--neutural-dark);
                     font-weight: 500;
                     margin-bottom: 8px;
+                    cursor: pointer;
                     transition: all 0.35s ease;
 
                     &:hover {

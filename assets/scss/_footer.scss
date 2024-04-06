@@ -1,9 +1,13 @@
 footer {
     background-color: #fff;
+
+    &.footer-grey {
+        background-color: var(--grey-light-hv);
+    }
     
     .footer-action {
         padding: 43px 0;
-        background-image: linear-gradient(90deg, var(--violet) 0%, var(--red) 80%);
+        background-image: linear-gradient(90deg, var(--violet) 0%, var(--red) 95%);
 
         .action-wrap {
             display: flex;
@@ -38,12 +42,15 @@ footer {
 
             h4 {
                 font-size: 24px;
+                font-family: $font-inter;
                 font-weight: 700;
                 margin-bottom: 10px;
             }
 
             p {
                 font-size: 16px;
+                font-family: $font-inter;
+                font-weight: 400;
             }
         }
 
@@ -120,6 +127,12 @@ footer {
 
                 img {
                     max-width: 136px;
+                }
+            }
+
+            .bct {
+                h4 {
+                    margin-bottom: 0px;
                 }
             }
         }
@@ -212,8 +225,10 @@ footer {
         .col-ecommerce {
             & > a {
                 display: inline-block;
+                background-color: #fff;
+                border-radius: 12px;
                 margin-bottom: 12px;
-                border: 1px solid var(--violet-light);
+                border: 0.5px solid var(--violet-light);
             }
         }
     }
@@ -241,6 +256,11 @@ footer {
             display: flex;
             gap: 2px;
             flex-wrap: wrap;
+        }
+
+        p {
+            font-size: 12px;
+            color: var(--violet-darker);
         }
     }
 }

@@ -265,6 +265,7 @@
                     background-color: var(--violet-light);
                     color: var(--violet);
                     margin-right: 12px;
+                    cursor: pointer;
                     transition: all 0.35s ease;
 
                     &:hover, &:has(input:checked) {
@@ -394,6 +395,63 @@
         top: 10px;
         flex: 0 0 28.85%;
         max-width: 375px;
+
+        .product-item {
+            .product-name {
+                a {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: var(--violet);
+                    height: 45px;
+                }
+            }
+
+            .product-price {
+                display: inline-flex;
+                column-gap: 20px;
+                margin-bottom: 30px;
+
+                .price-current {
+                    font-size: 24px;
+                }
+
+                .price-old {
+                    font-size: 16px;
+                }
+
+                .discount {
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: var(--red-light-hv);
+                    padding: 3px 10px 2px;
+                    border-radius: 50px;
+                    right: -70px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .detail-add-cart-wrap {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
+            .add-cart {
+                padding: 12px 10px 11px;
+                font-size: 14px;
+                font-weight: 700;
+                flex: 0 0 41.25%;
+            }
+
+            .buy-now {
+                padding: 12px 10px 11px;
+                flex: 1;
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 100px;
+            }
+        }
     }
 
     .product-detail-tabs {
@@ -454,10 +512,11 @@
                 }
             }
 
-            h4 {
+            h3 {
                 font-size: 16px;
                 font-weight: 700;
                 color: var(--violet);
+                text-transform: uppercase;
             }
 
             img {
@@ -543,6 +602,7 @@
 
             .total {
                 display: block;
+                flex: 0 0 100%;
                 line-height: 1.5em;
                 color: var(--neutural);
             }
@@ -551,13 +611,20 @@
         .overview-chart {
             .overview-chart-item {
                 display: flex;
+                align-items: center;
                 gap: 10px;
-                margin-bottom: 13px;
+                margin-bottom: 5px;
+
+                .rating-star {
+                    width: 96px;
+                    font-size: 22px;
+                }
 
                 .heart-bar {
                     height: 7px;
                     flex: 1;
                     background-color: var(--violet-light);
+                    margin: 5px 0 0;
 
                     &:before {
                         width: var(--ratio);
@@ -591,9 +658,14 @@
                 border-radius: 100px;
                 padding: 3px 18px;
                 margin-right: 20px;
+                cursor: pointer;
 
                 &:last-child {
                     margin-right: 0;
+                }
+
+                &:has(input:checked) {
+                    background-color: var(--violet-light);
                 }
 
                 input {
@@ -683,6 +755,33 @@
             .list-tab {
                 .tab-item {
                     padding: 15px 20px;
+                }
+            }
+        }
+
+        .product-suggest {
+            .product-item {
+                .product-price {
+                    .price-current {
+                        font-size: 16px;
+                    }
+
+                    .price-old {
+                        font-size: 10px;
+                    }
+
+                    .discount {
+                        font-size: 12px;
+                    }
+                }
+
+                .detail-add-cart-wrap {
+                    flex-wrap: wrap;
+                }
+
+                .add-cart {
+                    flex: 0 0 100%;
+                    line-height: 1;
                 }
             }
         }

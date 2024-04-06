@@ -86,7 +86,6 @@ if(btnCloseSubmenu) {
       disableOnInteraction: false,
     },  
     speed: 1000,
-    watchOverflow: true,
     navigation: {
       nextEl: '.slider .swiper-button-next',
       prevEl: '.slider .swiper-button-prev',
@@ -99,7 +98,6 @@ if(btnCloseSubmenu) {
     slidesPerView: 8,
     spaceBetween: 30,
     speed: 750,
-    watchOverflow: true,
     breakpoints: {
         200: {
           slidesPerView: 3.5,
@@ -132,7 +130,6 @@ if(btnCloseSubmenu) {
       slidesPerView: 5,
       spaceBetween: 20,
       speed: 1000,
-      watchOverflow: true,
       breakpoints: {
           200: {
             slidesPerView: 1,
@@ -154,6 +151,10 @@ if(btnCloseSubmenu) {
           1200: {
               slidesPerView: 5,
             },
+      },
+      navigation: {
+        nextEl: '.flash-sale .swiper-button-next',
+        prevEl: '.flash-sale .swiper-button-prev',
       }
   }) || false;
 
@@ -163,7 +164,6 @@ if(btnCloseSubmenu) {
       slidesPerView: 5,
       spaceBetween: 20,
       speed: 1000,
-      watchOverflow: true,
       breakpoints: {
           200: {
               slidesPerView: 1,
@@ -185,6 +185,10 @@ if(btnCloseSubmenu) {
           1200: {
               slidesPerView: 5,
               },
+      },
+      navigation: {
+        nextEl: '.top-sale .swiper-button-next',
+        prevEl: '.top-sale .swiper-button-prev',
       }
   }) || false;
 
@@ -194,7 +198,6 @@ if(btnCloseSubmenu) {
     slidesPerView: 5,
     spaceBetween: 20,
     speed: 1000,
-    watchOverflow: true,
     breakpoints: {
         200: {
             slidesPerView: 1,
@@ -225,7 +228,6 @@ if(btnCloseSubmenu) {
     slidesPerView: 5,
     spaceBetween: 20,
     speed: 1000,
-    watchOverflow: true,
     breakpoints: {
         200: {
             slidesPerView: 1,
@@ -287,7 +289,6 @@ if(btnCloseSubmenu) {
     slidesPerView: 3,
     spaceBetween: 23,
     speed: 1000,
-    watchOverflow: true,
     breakpoints: {
         200: {
             slidesPerView: 1,
@@ -312,7 +313,6 @@ if(btnCloseSubmenu) {
     slidesPerView: 3,
     spaceBetween: 20,
     speed: 1000,
-    watchOverflow: true,
     breakpoints: {
         200: {
             slidesPerView: 1,
@@ -342,7 +342,6 @@ if(btnCloseSubmenu) {
         slidesPerView: 5,
         spaceBetween: 20,
         speed: 1000,
-        watchOverflow: true,
         navigation: {
           nextEl: '.partners .swiper-button-next',
           prevEl: '.partners .swiper-button-prev',
